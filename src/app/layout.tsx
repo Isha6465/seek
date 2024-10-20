@@ -9,8 +9,9 @@ import { InfiniteMovingCardsDemo } from "@/components/ui/InfiniteMovingCardsDemo
 import { CardHoverEffectDemo } from "@/components/ui/CardHoverEffectDemo";
 // import { AnimatedTooltipPreview } from "@/components/ui/AnimatedTooltipPreview";
 import { GlobeDemo } from "@/components/ui/GlobeDemo";
-// import { VortexDemo } from "@/components/ui/VortexDemo";
+import { VortexDemo } from "@/app/About/VortexDemo";
 import Footer from "@/components/ui/Footer";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -45,8 +46,8 @@ export default function RootLayout({
        <CardHoverEffectDemo/>
     {/* <AnimatedTooltipPreview/> */}
     <GlobeDemo/>
-    {/* <VortexDemo/> */}
-
+    <VortexDemo/>
+  
         {children}
         <Footer/>
       </body>
