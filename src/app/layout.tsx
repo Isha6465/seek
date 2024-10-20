@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import { Navbar } from "@/components/ui/Navbar";
+import FeaturedCourses from "@/components/ui/FeaturedCourses";
+import { SpotlightPreview } from "@/components/ui/SpotlightPreview";
+import { StickyScrollRevealDemo } from "@/components/ui/StickyScrollRevealDemo";
+import { InfiniteMovingCardsDemo } from "@/components/ui/InfiniteMovingCardsDemo";
+import { CardHoverEffectDemo } from "@/components/ui/CardHoverEffectDemo";
+// import { AnimatedTooltipPreview } from "@/components/ui/AnimatedTooltipPreview";
+import { GlobeDemo } from "@/components/ui/GlobeDemo";
+// import { VortexDemo } from "@/components/ui/VortexDemo";
+import Footer from "@/components/ui/Footer";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,7 +37,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar/>
+       <SpotlightPreview/>
+       <FeaturedCourses/>
+       <StickyScrollRevealDemo/>
+       <InfiniteMovingCardsDemo/>
+       <CardHoverEffectDemo/>
+    {/* <AnimatedTooltipPreview/> */}
+    <GlobeDemo/>
+    {/* <VortexDemo/> */}
+
         {children}
+        <Footer/>
       </body>
     </html>
   );
